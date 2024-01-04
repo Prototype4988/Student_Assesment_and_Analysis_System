@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Chart JS</title>
+	<script type="text/javascript" 
+            src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+    </script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js" defer></script>
+	<link rel="stylesheet" type="text/css" href="charts.css">
+	<script type="text/javascript" src="charts.js" defer></script>
+</head>
+<body>
+<script type="text/javascript">
+	
+</script>
+
+<br />
+<br />
+<h1 class="animate-charcter">Subject wise analysis</h1>
+<br />
+<br />
+<br />
+<div style="width: 100%;">
+<div class="chart-contain" style="width: 50%;width: 600px;
+	height: 600px;float: left;margin-left: 20px;">
+  <a href="/staff" class="previous" style="text-decoration: none;display: inline-block;padding: 8px 16px;">&laquo; BACK</a>
+	<h3>Bar Representation</h3>
+<canvas id="myChart"></canvas>
+<form action="/get-val" method="GET">
+	<!-- <label>Subject code</label> -->
+
+	<div class="page">
+  <label class="field field_v1">
+    <input class="field__input" placeholder="e.g. GE8161" type="text" name="code">
+    <span class="field__label-wrap">
+      <span class="field__label">Subject Code</span>
+    </span>
+  </label>
+  <label class="field field_v2">
+    <input class="field__input" placeholder="e.g. CAT1" type="text" name="cat">
+    <span class="field__label-wrap">
+      <span class="field__label">Category</span>
+    </span>
+  </label>  
+  
+</div>
+
+	<!-- <input type="text" name="code"> -->
+	
+	<button type="submit" class="button-17" style="font-size: 20px; margin-left: 80px;">Submit</button>
+</form>
+</div>
+
+<div class="chart-contain2"  style="margin-left: 50%;width: 500px;
+	height: 500px;">
+	<h3>Pie Representation</h3>
+<canvas id="myChart2"></canvas>
+
+</div>
+</div>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<h1 class="animate-charcter" style="margin-right:0px;">Student wise analysis</h1>
+<br />
+<br />
+<br />
+<div style="width: 100%;">
+<div class="chart-contain3" style="width: 50%;width: 600px;
+	height: 600px;float: left;margin-left: 20px;">
+	<h3>Bar Representation</h3>
+<canvas id="myChart3"></canvas>
+<form action="/get-mark" method="GET">
+
+<div class="page">
+  <label class="field field_v1">
+    <input class="field__input" placeholder="e.g. 311118104016" type="text" name="mark">
+    <span class="field__label-wrap">
+      <span class="field__label">Regno</span>
+    </span>
+  </label>
+  <label class="field field_v2">
+    <input class="field__input" placeholder="e.g. 1" type="text" name="sem">
+    <span class="field__label-wrap">
+      <span class="field__label">Semester</span>
+    </span>
+  </label>   
+ <label class="field field_v2">
+    <input class="field__input" placeholder="e.g. CAT1" type="text" name="cat">
+    <span class="field__label-wrap">
+      <span class="field__label">Category</span>
+    </span>
+  </label>    
+</div>
+
+	<!-- <label>Regno</label>
+	<input type="text" name="mark">
+	<label>Semester</label>
+	<input type="text" name="sem"> -->
+	<button type="submit" class="button-17" style="font-size: 20px; margin-left: 80px;">Submit</button>
+</form>
+</div>
+
+<div class="chart-contain4"  style="margin-left: 50%;width: 500px;
+	height: 500px;">
+	<h3>Pie Representation</h3>
+<canvas id="myChart4"></canvas>
+
+</div>
+</div>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<h1 class="animate-charcter">Top 5 scorers</h1>
+<div style="width: 50%;margin-left:20px;">
+	<div class="chart-contain5" style="width: 50%;width: 600px;
+	height: 600px;float: left;">
+	
+	<canvas id="myChart5"></canvas>
+<form action="/get-top" method="GET">
+
+	<div class="page">
+  <label class="field field_v1">
+    <input class="field__input" placeholder="e.g. CS8602" type="text" name="subject">
+    <span class="field__label-wrap">
+      <span class="field__label">Subject</span>
+    </span>
+  </label> 
+ <label class="field field_v2">
+    <input class="field__input" placeholder="e.g. CAT1" type="text" name="cat">
+    <span class="field__label-wrap">
+      <span class="field__label">Category</span>
+    </span>
+  </label>    
+</div>
+	<!-- <label>Subject</label>
+	<input type="text" name="subject"> -->
+	
+	<button type="submit" class="button-17" style="font-size: 20px; margin-left: 80px;">Submit</button>
+</form>
+</div>
+</div>
+</body>
+</html>
